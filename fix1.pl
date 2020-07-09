@@ -73,6 +73,12 @@ sub process_sentence
                 $f[$i] =~ s/\s+$//;
                 $f[$i] = '_' if($f[$i] eq '');
             }
+            # The data does not contain syntax but if columns have been shifted,
+            # it may look as if there is some syntax. Make sure the relevant
+            # columns are really empty.
+            $f[6] = '_'; # HEAD
+            $f[7] = '_'; # DEPREL
+            $f[8] = '_'; # DEPS
             $line = join("\t", @f);
             push(@nodes, $line.chr(10));
         }
