@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treebank>
+  <!-- tokens means "surface tokens", e.g. Spanish "vámonos" counts as one token
+       words means "syntactic words", e.g. Spanish "vámonos" is split to two words, "vamos" and "nos"
+       fused is the number of tokens that are split to two or more syntactic words
+       The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
+  <size>
+    <total><sentences>32418</sentences><tokens>222875</tokens><words>223057</words><fused>179</fused></total>
+  </size>
+  <lemmas unique="12990" /><!-- ., të, kam, e, do, ai, ,, ata, në, unë, ne, ti, ju, jam, dhe -->
+  <forms unique="29772" /><!-- ., të, e, do, ,, ai, në, ata, ne, unë, ti, ju, i, dhe, me -->
+  <fusions unique="14" /><!-- ta, ia, ua, iu, jua, mi, anti-duhan, ma, mu, perso–iraniane, t'u, t’i, t’ia, t’ua -->
+  <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
+  <tags unique="17">
+    <tag name="ADJ">7725</tag><!-- madh, parë, shqiptar, lartë, ndryshëm, re, vogël, fundit, rëndësishëm, njohur -->
+    <tag name="ADP">11126</tag><!-- në, me, për, nga, më, pas, prej, deri, mbi, sipas -->
+    <tag name="ADV">3670</tag><!-- shumë, si, vetëm, pas, sot, vonë, ashtu, pak, kryesisht, aty -->
+    <tag name="AUX">13421</tag><!-- kam, jam, mund, duhem, dua, duhej, duhet, jan, lulëzoj, mundi -->
+    <tag name="CCONJ">6107</tag><!-- dhe, edhe, e, se, por, ose, kur, ku, ndërsa, që -->
+    <tag name="DET">15217</tag><!-- të, e, i, së, u, një, iu, ti, tu, na -->
+    <tag name="INTJ">32</tag><!-- o, more, le, na, lumja, Jaaa, Mirupafshim, a, ah, e -->
+    <tag name="NOUN">26023</tag><!-- vit, pjesë, vend, kohë, qytet, njeri, fshat, ditë, emër, jetë -->
+    <tag name="NUM">4085</tag><!-- një, dy, tre, dytë, pari, katër, 4, 20, 1, pesë -->
+    <tag name="PART">20405</tag><!-- të, do, u, më, nuk, duke, po, për, jo, mos -->
+    <tag name="PRON">31683</tag><!-- ai, ata, unë, ne, ti, ju, që, tij, ky, ajo -->
+    <tag name="PROPN">6423</tag><!-- Shqipëri, Kosovë, Tiranë, Prishtinë, Romë, Shkodër, universitet, luftë, zot, Itali -->
+    <tag name="PUNCT">38413</tag><!-- ., ,, !, ", :, –, (, ), ’, ? -->
+    <tag name="SCONJ">824</tag><!-- që, si, se, ku, kur, sidomos, siç, megjithëse, sikurse, mirëpo -->
+    <tag name="SYM">90</tag><!-- %, °C, km2, &, +, ?, m/s, °, ×, $ -->
+    <tag name="VERB">37803</tag><!-- jam, kam, bëj, them, marr, jap, filloj, përdor, vij, vendos -->
+    <tag name="X">10</tag><!-- AUX, Kadare, c’, dhen, dhjetor, gjithnjë, ne, pasi, shpellë, të -->
+  </tags>
+  <!-- Statistics of features and values. The comments show the most frequent word forms. -->
+  <feats unique="95">
+    <feat name="Abbr" value="Yes" upos="ADV">42</feat><!-- etj, p.e.s., p.sh. -->
+    <feat name="AdvType" value="Cau" upos="ADV">406</feat><!-- si, kështu, pse, përse, sepse, Ndoshta, pasi, prandej, sespe, tash -->
+    <feat name="AdvType" value="Deg" upos="ADV">781</feat><!-- shumë, pak, sa, tepër, mjaft, aq, shpesh, pothuajse, krejt, kaq -->
+    <feat name="AdvType" value="Loc" upos="ADP,ADV">459</feat><!-- aty, mes, brenda, ku, përmes, këtu, jashtë, atje, larg, poshtë -->
+    <feat name="AdvType" value="Man" upos="ADV">1175</feat><!-- vetëm, ashtu, kryesisht, zakonisht, gjithashtu, mirë, gjatë, bashku, bashkë, drejt -->
+    <feat name="AdvType" value="Tim" upos="ADV,X">845</feat><!-- pas, sot, vonë, pasi, pastaj, tani, atëherë, ende, përsëri, parë -->
+    <feat name="AUX" value="Yes" upos="VERB">1</feat><!-- mbuluar -->
+    <feat name="Case" value="Abl" upos="ADP,NOUN,PRON,PROPN">971</feat><!-- kësaj, saj, vdekjes, vitit, viteve, para, pranë, prej, guri, kulture -->
+    <feat name="Case" value="Abl,Acc" upos="DET,PRON">286</feat><!-- këtë, e, të, tillë, atë, këto, cilët, këtyre, ndonjë, tjetër -->
+    <feat name="Case" value="Abl,Dat" upos="NOUN,PRON">66</feat><!-- asaj, atij, atyre -->
+    <feat name="Case" value="Acc" upos="ADJ,ADP,DET,NOUN,PART,PRON,PROPN,VERB,X">14056</feat><!-- e, vitin, në, me, këtë, atë, pjesë, mënyrë, kohë, vend -->
+    <feat name="Case" value="ACC" upos="NOUN">3</feat><!-- policinë, përthithjen, zona -->
+    <feat name="Case" value="Acc,Dat" upos="ADP,PRON">107</feat><!-- na, më, mua, ty, ju, të, m -->
+    <feat name="Case" value="Dat" upos="DET,NOUN,PRON,PROPN">1096</feat><!-- i, u, kësaj, vitit, tyre, viteve, këtij, luftës, të, botës -->
+    <feat name="Case" value="Det" upos="NOUN,PRON,PROPN">3</feat><!-- MSC, botëve, u -->
+    <feat name="Case" value="Geb" upos="PROPN">1</feat><!-- Durrësit -->
+    <feat name="Case" value="Gen" upos="ADP,DET,NOUN,PRON,PROPN">5891</feat><!-- të, vitit, kësaj, këtij, qytetit, Kosovës, kohës, luftës, Shqipërisë, popullsisë -->
+    <feat name="Case" value="GenDat" upos="PROPN">1</feat><!-- Barletit -->
+    <feat name="Case" value="Nom" upos="ADP,DET,NOUN,PART,PRON,PROPN,VERB,X">36376</feat><!-- ai, ata, ne, unë, ti, ju, ky, ajo, kjo, ato -->
+    <feat name="CCase" value="Acc" upos="PRON">1</feat><!-- atë -->
+    <feat name="Deegre" value="Pos" upos="PROPN">1</feat><!-- Shqiptare -->
+    <feat name="Defenite" value="Def" upos="PROPN">1</feat><!-- Zaranikës -->
+    <feat name="Definite" value="Acc" upos="NOUN,PROPN">2</feat><!-- Berlin, politikën -->
+    <feat name="Definite" value="Def" upos="NOUN,PRON,PROPN,VERB,X">20035</feat><!-- vitin, vitit, viti, kohës, qytetit, luftës, emrin, jetën, Kosovës, pjesa -->
+    <feat name="Definite" value="DEF" upos="PROPN">1</feat><!-- Mortajës -->
+    <feat name="Definite" value="Ind" upos="ADJ,ADP,NOUN,PART,PRON,PROPN,X">9647</feat><!-- pjesë, kohë, mënyrë, vend, herë, ditë, shkak, fund, vjet, fshat -->
+    <feat name="Definite" value="Nom" upos="NOUN">1</feat><!-- filozofi -->
+    <feat name="Degre" value="Cmp" upos="ADJ">53</feat><!-- madhe, lartë, mirë, madh, vogël, rrallë, rëndësishëm, sigurt, vogla, efikas -->
+    <feat name="Degre" value="Pos" upos="ADJ,NOUN,PROPN">7342</feat><!-- parë, ndryshme, madhe, madh, shqiptare, fundit, lartë, vogël, re, njohur -->
+    <feat name="Degre" value="Sup" upos="ADJ">162</feat><!-- madhe, madh, lartë, mirë, mëdha, gjatë, ulët, vjetër, vogël, larta -->
+    <feat name="Degre" value="SUP" upos="ADJ">1</feat><!-- bukuri -->
+    <feat name="Degree" value="Po" upos="ADJ">1</feat><!-- administrative -->
+    <feat name="Degree" value="Pos" upos="ADJ,ADV,PROPN">187</feat><!-- njëjtin, sportive, njëjtën, televiziv, administrative, bizantine, operativ, pasme, shqipe, administrativ -->
+    <feat name="Foreig" value="Yes" upos="PROPN">2</feat><!-- Alexander, Willem -->
+    <feat name="Foreign" value="Yes" upos="ADJ,NOUN,PROPN">212</feat><!-- My, CP/M, Life, Raiden, Sans, Sasukes, Serif, Serife, United, brute-force -->
+    <feat name="Foreing" value="Yes" upos="NOUN,PROPN">10</feat><!-- Herwig, Ligue, Melville, Rodriguez, Rodríguez, Store, Wolfram-i, multitasking, multithredi, thred -->
+    <feat name="Foreugn" value="Yes" upos="PROPN">3</feat><!-- Henriete, Volcogens, von -->
+    <feat name="Gender" value="Fem" upos="DET,NOUN,NUM,PART,PRON,PROPN,VERB,X">16060</feat><!-- e, ajo, të, pjesë, ato, kjo, kësaj, këto, këtë, kohë -->
+    <feat name="Gender" value="Mac" upos="PROPN">3</feat><!-- GameCube-n, PlayStation-in, Xbox-in -->
+    <feat name="Gender" value="Mas" upos="NOUN">1</feat><!-- udhëheqës -->
+    <feat name="Gender" value="Masc" upos="ADJ,ADP,DET,NOUN,NUM,PRON,PROPN,VERB,X">25084</feat><!-- ai, ata, vitin, ky, e, këtë, vitit, atë, i, vend -->
+    <feat name="Gender" value="Neu" upos="NOUN">1</feat><!-- dhen -->
+    <feat name="Gender" value="Nom" upos="NOUN">1</feat><!-- viti -->
+    <feat name="Gender" value="Plur" upos="NOUN">1</feat><!-- marrëdhëniet -->
+    <feat name="Gender" value="Sing" upos="NOUN">1</feat><!-- rrjet -->
+    <feat name="MMood" value="Ind" upos="VERB">1</feat><!-- ishte -->
+    <feat name="Mood" value="Adm" upos="AUX,VERB">5336</feat><!-- paska, paskam, paskan, paskësh, paske, paskemi, paskeni, paskësha, paskëshe, paskëshim -->
+    <feat name="Mood" value="Cnd" upos="VERB">212</feat><!-- bëhej, jepte, sulmonin, vinin, kthehej, shkonin, bënin, dilte, kërkonte, luante -->
+    <feat name="Mood" value="Def" upos="VERB">1</feat><!-- bëftë -->
+    <feat name="Mood" value="Des" upos="VERB">3</feat><!-- rroftë, Trashëgofsh -->
+    <feat name="Mood" value="Imp" upos="VERB">477</feat><!-- beso, bëhu, dëshiro, eja, hani, kini, mbaj, mendo, merr, ngri -->
+    <feat name="Mood" value="Ind" upos="AUX,VERB">21964</feat><!-- është, ka, kishte, ishte, kishin, janë, kanë, kisha, kishim, kishit -->
+    <feat name="Mood" value="Indi" upos="VERB">1</feat><!-- përdorur -->
+    <feat name="Mood" value="Int" upos="VERB">1</feat><!-- përfshihen -->
+    <feat name="Mood" value="Ipm" upos="VERB">1</feat><!-- Ngrohini -->
+    <feat name="Mood" value="Nom" upos="VERB">1</feat><!-- fluturojne -->
+    <feat name="Mood" value="Opt" upos="AUX,VERB">2664</feat><!-- pastë, paç, paça, paçim, paçin, paçi, qofshin, qofsh, qofsha, qofshim -->
+    <feat name="Mood" value="Sub" upos="AUX,VERB">6320</feat><!-- ketë, kenë, kemi, kem, keni, kesh, jetë, jenë, jem, jeni -->
+    <feat name="MVerbForm" value="Part" upos="VERB">1</feat><!-- mbetur -->
+    <feat name="Number" value="Plur" upos="ADJ,AUX,DET,NOUN,PRON,PROPN,VERB,X">37690</feat><!-- ata, ne, ju, kemi, keni, kishin, janë, kanë, kishim, kenë -->
+    <feat name="Number" value="Sign" upos="VERB">2</feat><!-- rënë, vizituar -->
+    <feat name="Number" value="Sin" upos="PROPN">1</feat><!-- Kosovë -->
+    <feat name="Number" value="Sing" upos="ADJ,ADP,AUX,DET,NOUN,PART,PRON,PROPN,VERB,X">57540</feat><!-- ai, unë, ti, është, ka, kishte, ishte, kisha, ketë, kishe -->
+    <feat name="Number" value="SIng" upos="NOUN">3</feat><!-- milion, monument, rast -->
+    <feat name="Numer" value="Plur" upos="NOUN">1</feat><!-- shkrimtarëve -->
+    <feat name="NumType" value="Card" upos="DET,NUM,PROPN">3743</feat><!-- një, dy, tre, 1, 4, katër, 20, pesë, 14, 15 -->
+    <feat name="NumType" value="Ord" upos="NUM,PROPN">270</feat><!-- një, dytë, parë, dyja, dy, II, pari, IV, IX, XX -->
+    <feat name="Person" value="1" upos="ADP,AUX,PRON,VERB">17774</feat><!-- unë, ne, kemi, kisha, kishim, kem, kam, pata, paskam, paskemi -->
+    <feat name="Person" value="2" upos="AUX,PRON,VERB">17555</feat><!-- ju, ti, keni, kishit, kishe, kesh, ke, paske, paskeni, paskëshe -->
+    <feat name="Person" value="3" upos="AUX,DET,PART,PRON,VERB">28531</feat><!-- ai, ata, është, ka, kishte, ishte, kishin, janë, kanë, ketë -->
+    <feat name="Polarity" value="Neg" upos="VERB">9</feat><!-- mos -->
+    <feat name="Poss" value="Yes" upos="PRON">1092</feat><!-- tij, tyre, saj, tonë, këtyre, tona, sonë, im, tim, tuaj -->
+    <feat name="PronType" value="Art" upos="DET">352</feat><!-- të, e, një, i, së, gjatë, gjë, këngë, u -->
+    <feat name="PronType" value="Dem" upos="NOUN,PRON">1228</feat><!-- këtë, ky, këto, kjo, kësaj, atë, këtij, ato, tillë, asaj -->
+    <feat name="PronTYpe" value="Ind" upos="PRON">1</feat><!-- Disa -->
+    <feat name="PronType" value="Ind" upos="PRON">1137</feat><!-- disa, gjithë, tjera, tjetër, gjitha, çdo, tjerë, ndonjë, asnjë, njëri -->
+    <feat name="PronType" value="Int" upos="PRON">68</feat><!-- çfarë, ç', cilët, kush, cila, cilat, cfarë, cili, si, c' -->
+    <feat name="PronType" value="Prd" upos="PRON">1</feat><!-- Ai -->
+    <feat name="PronType" value="Prs" upos="ADP,DET,PART,PRON">28221</feat><!-- ai, ata, ne, unë, ju, ti, tij, e, tyre, saj -->
+    <feat name="PronType" value="PRS" upos="PRON">1</feat><!-- tim -->
+    <feat name="Prontype" value="Rel" upos="PRON">2</feat><!-- cilat, që -->
+    <feat name="PronType" value="Rel" upos="PRON">940</feat><!-- që, cili, cilat, cila, cilën, cilin, cilët, cilës, cilit, vetë -->
+    <feat name="Reflex" value="Yes" upos="PRON">38</feat><!-- vetë, vete, vet, vetes, veta, veten, gjitha, vetin -->
+    <feat name="Relfex" value="Yes" upos="PRON">119</feat><!-- vet, vetë, veten, vete, veta, vetvete, tyre, vetes, gjithë, tjera -->
+    <feat name="Tense" value="Fut" upos="VERB">140</feat><!-- thotë, bëhet, bësh, krijohet, kuptohet, mbash, ndodhë, punojë, shkruaj, vendoset -->
+    <feat name="Tense" value="Imp" upos="AUX,VERB">10776</feat><!-- kishte, ishte, kishin, kisha, kishim, kishit, kishe, ishin, paskësh, paskësha -->
+    <feat name="Tense" value="Impt" upos="VERB">2</feat><!-- ishte -->
+    <feat name="Tense" value="Past" upos="AUX,VERB">6287</feat><!-- pati, patën, pata, pate, patëm, patët, mori, bë, bëri, filloi -->
+    <feat name="Tense" value="Pqp" upos="VERB">2</feat><!-- marrë, thanë -->
+    <feat name="Tense" value="Pres" upos="AUX,VERB">19330</feat><!-- është, ka, kemi, keni, janë, kanë, ketë, kenë, kem, kesh -->
+    <feat name="Tense" value="Prs" upos="VERB">1</feat><!-- lus -->
+    <feat name="VerbForm" value="Inf" upos="VERB">1</feat><!-- ndalur -->
+    <feat name="VerbForm" value="PART" upos="VERB">1</feat><!-- treguar -->
+    <feat name="VerbForm" value="Part" upos="AUX,NOUN,VERB">13791</feat><!-- qenë, bërë, ngritur, zhvilluar, mbaruar, sulmuar, mësuar, ndryshuar, udhëhequr, punësuar -->
+    <feat name="VerbForm" value="Past" upos="VERB">1</feat><!-- qenë -->
+  </feats>
+  <!-- Statistics of universal dependency relations. -->
+  <deps unique="3">
+    <dep name="dep">152248</dep>
+    <dep name="punct">38391</dep>
+    <dep name="root">32418</dep>
+  </deps>
+</treebank>

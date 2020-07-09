@@ -8,4 +8,5 @@ process:
 	cat dz-trainshort.conllu dz-trainlong.conllu dz-dev.conllu dz-test.conllu > all.conllu
 	perl -S conllu-quick-fix-id-sequence.pl < all.conllu > fixed.conllu && mv fixed.conllu all.conllu
 	perl -S conllu-quick-fix.pl < all.conllu > fixed.conllu && mv fixed.conllu all.conllu
+	perl -S conllu-stats.pl < all.conllu > stats.xml
 
