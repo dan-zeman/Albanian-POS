@@ -12165,7 +12165,7 @@
 25	e	e	DET	_	_	_	_	_	_
 26	saj	saj	PRON	_	Poss=Yes|PronType=Prs	_	_	_	SpaceAfter=No
 27	,	,	PUNCT	_	_	_	_	_	_
-28	pasi	pasi	pasi	ADV	_	AdvType=Tim	_	_	_
+28	pasi	pasi	pasi	ADV	_	_	_	_	_
 29	zbuloi	zbuloj	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Past	_	_	_	_
 30	se	se	CCONJ	_	_	_	_	_	_
 31	Terminatori	Terminator	PROPN	_	Case=Nom|Definite=Def|Gender=Masc|Number=Sing	_	_	_	_

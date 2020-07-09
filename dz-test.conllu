@@ -14450,7 +14450,7 @@
 9	tulla	tullë	NOUN	_	Case=Acc|Definite=Ind|Gender=Fem|Number=Plur	_	_	_	_
 10	që	që	PRON	_	PronType=Rel	_	_	_	_
 11	janë	jam	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres	_	_	_	_
-12	mbuluar	mbuloj	VERB	_	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres	_	_
+12	mbuluar	mbuloj	VERB	_	AUX	_	_	_	_
 13	nga	nga	ADP	_	_	_	_	_	_
 14	një	një	NUM	_	NumType=Card	_	_	_	_
 15	pyll	pyll	NOUN	_	Case=Nom|Definite=Ind|Gender=Masc|Number=Sing	_	_	_	_
