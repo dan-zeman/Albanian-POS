@@ -60,11 +60,21 @@ sub process_sentence
         }
         elsif($line =~ m/^\d/)
         {
-            push(@nodes, $line.chr(10));
             if($line =~ m/^\d+\t/)
             {
                 $normal_node_encountered = 1;
             }
+            # Make sure there are exactly 10 columns.
+            my @f = split(/\t/, $line);
+            splice(@f, 10);
+            for(my $i = 0; $i < 10; $i++)
+            {
+                $f[$i] =~ s/^\s+//;
+                $f[$i] =~ s/\s+$//;
+                $f[$i] = '_' if($f[$i] eq '');
+            }
+            $line = join("\t", @f);
+            push(@nodes, $line.chr(10));
         }
         elsif($line =~ m/^\s*$/)
         {
