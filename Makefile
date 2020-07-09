@@ -10,3 +10,11 @@ process:
 	perl -S conllu-quick-fix.pl < all.conllu > fixed.conllu && mv fixed.conllu all.conllu
 	perl -S conllu-stats.pl < all.conllu > stats.xml
 
+compare:
+	mkdir uppsala
+	mkdir turku
+	cp all.conllu turku
+	cp ../UD_Albanian-TSA/sq_tsa-ud-test.conllu uppsala
+	conllu-stats.pl --oformat hubcompare uppsala turku > uppsala-turku-comparison.md
+	rm -rf uppsala turku
+
