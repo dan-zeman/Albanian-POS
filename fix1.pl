@@ -13,7 +13,7 @@ use Getopt::Long;
 my $sent_id_prefix = '';
 GetOptions
 (
-    'sent_id_prefix=s' => \$sent_id_prefix;
+    'sent_id_prefix=s' => \$sent_id_prefix
 );
 if($sent_id_prefix !~ m/^[A-Za-z0-9_]+$/)
 {
